@@ -1,0 +1,624 @@
+// ------
+// OVERVIEW --
+// This is boilerplate for defining a new VS Color Theme.
+// Rename this file and define all these values to get started with your theme.
+// Further reference here: https://code.visualstudio.com/docs/extensions/themes-snippets-colorizers
+// IMPORTANT: This boiler plate file is .jsonc to allow comments, but official theme files are .json so comments are invalid syntax. Be sure remove the comments along with renameing to .json before applying your theme.
+// ------
+
+{
+  // Theme Information -- 
+  // Here you'll define the Theme name and type (dark or light). 
+  
+  // The rest of your theme information and settings are defined in package.json. For further reference see: https://code.visualstudio.com/docs/extensionAPI/extension-manifest#_marketplace-presentation-tips
+
+  "name": "Theme Name", 
+  "type": "dark",
+
+  // All color values inside "colors" and "tokenColors" need to be defined in the RGB color model with an optional alpha channel for transparency. The following hexadecimal notations are supported: #RGB, #RGBA, #RRGGBB and #RRGGBBAA. 
+  
+  // The last value is 8-digit HEX with the last two digits controlling the alpha channel. See: https://css-tricks.com/8-digit-hex-codes/
+
+  // ------------ 
+  // UI Colors
+  // ------------ 
+  "colors": {
+    // Everything inside here styles the elements of the UI.
+    // For furthere reference see: https://code.visualstudio.com/docs/getstarted/theme-color-reference
+
+    // Contrast Colors --
+    // Contrast colors are typically only set for high contrast themes. If set, they add an additional border around items across the UI to increase the contrast.
+    "contrastActiveBorder": "",
+    "contrastBorder": "",
+
+    // Base Colors
+    "focusBorder": "",
+    "foreground": "",
+    "widget.shadow": "",
+    "selection.background": "",
+    "descriptionForeground": "",
+    "errorForeground": "",
+    "icon.foreground": "",
+
+    // Window Border --
+    // Colors for VS Code window border.
+    "window.activeBorder": "",
+    "window.inactiveBorder": "",
+
+    // Text Colors --
+    // Colors inside a text document, such as the welcome page.
+    "textBlockQuote.background": "",
+    "textBlockQuote.border": "",
+    "textCodeBlock.background": "",
+    "textLink.activeForeground": "",
+    "textLink.foreground": "",
+    "textPreformat.foreground": "",
+    "textSeparator.foreground": "",
+
+    // Button Control --
+    // A set of colors for button widgets such as Open Folder button in the Explorer of a new window.
+    "button.background": "",
+    "button.foreground": "",
+    "button.hoverBackground": "",
+
+    // Dropdown Control -- 
+    // A set of colors for all dropdown widgets such as in the Integrated Terminal or the Output panel. Note: This dropdown control is not used on macOS currently, which is the plaform I use, so I haven't defined these colors.
+    "dropdown.background": "",
+    "dropdown.listBackground": "",
+    "dropdown.border": "",
+    "dropdown.foreground": "",
+
+    // Input Control -- 
+    // Colors for input controls such as in the Search view or the Find/Replace dialog.
+    "input.background": "",
+    "input.border": "",
+    "input.foreground": "",
+    "input.placeholderForeground": "",
+    "inputOption.activeBorder": "",
+    "inputValidation.errorBackground": "",
+    "inputValidation.errorBorder": "",
+    "inputValidation.infoBackground": "",
+    "inputValidation.infoBorder": "",
+    "inputValidation.warningBackground": "",
+    "inputValidation.warningBorder": "",
+
+    // Scroll Bar Control
+    "scrollbar.shadow": "",
+    "scrollbarSlider.activeBackground": "",
+    "scrollbarSlider.background": "",
+    "scrollbarSlider.hoverBackground": "",
+
+    // Badge --
+    // Badges are small information labels, for example, search results count.
+    "badge.foreground": "",
+    "badge.background": "",
+
+    // Progress Bar --
+    "progressBar.background": "",
+
+    // Lists and Trees --
+    // Colors for list and trees like the File Explorer. An active list/tree has keyboard focus, an inactive does not.
+    "list.activeSelectionBackground": "",
+    "list.activeSelectionForeground": "",
+    "list.dropBackground": "",
+    "list.focusBackground": "",
+    "list.focusForeground": "",
+    "list.highlightForeground": "",
+    "list.hoverBackground": "",
+    "list.hoverForeground": "",
+    "list.inactiveSelectionBackground": "",
+    "list.inactiveSelectionForeground": "",
+    "list.inactiveFocusBackground": "",
+    "list.invalidItemForeground": "",
+    "list.errorForeground": "",
+    "list.warningForeground": "",
+
+    // Activity Bar — The Activity Bar is displayed either on the far left or right of the workbench and allows fast switching between views of the Side Bar.
+    "activityBar.background": "",
+    "activityBar.dropBackground": "",
+    "activityBar.foreground": "",
+    "activityBar.border": "",
+    "activityBarBadge.background": "",
+    "activityBarBadge.foreground": "",
+
+    // Side Bar — The Side Bar contains views like the Explorer and Search.
+    "sideBar.background": "",
+    "sideBar.foreground": "",
+    "sideBar.border": "",
+    "sideBar.dropBackground": "",
+    "sideBarTitle.foreground": "",
+    "sideBarSectionHeader.background": "",
+    "sideBarSectionHeader.foreground": "",
+
+    // Editor Groups & Tabs -- 
+    // Editor Groups are the containers of editors. There can be up to three editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
+    "editorGroup.emptyBackground": "",
+    "editorGroup.border": "",
+    "editorGroup.dropBackground": "",
+    "editorGroupHeader.noTabsBackground": "",
+    "editorGroupHeader.tabsBackground": "",
+    "editorGroupHeader.tabsBorder": "",
+    "editorGroup.focusedEmptyBorder": "",
+    "tab.activeBackground": "",
+    "tab.activeForeground": "",
+    "tab.border": "",
+    "tab.activeBorder": "",
+    "tab.activeBorderTop": "",
+    "tab.unfocusedActiveBorder": "",
+    "tab.unfocusedActiveBorderTop": "",
+    "tab.inactiveBackground": "",
+    "tab.inactiveForeground": "",
+    "tab.unfocusedActiveForeground": "",
+    "tab.unfocusedInactiveForeground": "",
+    "tab.hoverBackground": "",
+    "tab.unfocusedHoverBackground": "",
+    "tab.hoverBorder": "",
+    "tab.unfocusedHoverBorder": "",
+    "tab.activeModifiedBorder": "",
+    "tab.inactiveModifiedBorder": "",
+    "tab.unfocusedActiveModifiedBorder": "",
+    "tab.unfocusedInactiveModifiedBorder": "",
+
+    // Editor Colors --
+    // For syntax highlighting, use the editor.tokenColorCustomizations setting. All other editor colors are listed here
+    "editor.background": "",
+    "editor.foreground": "",
+    "editorLineNumber.foreground": "",
+    "editorLineNumber.activeForeground": "",
+    "editorCursor.background": "",
+    "editorCursor.foreground": "",
+    "editor.selectionBackground": "",
+    "editor.selectionForeground": "",
+    "editor.inactiveSelectionBackground": "",
+    "editor.selectionHighlightBackground": "",
+    "editor.selectionHighlightBorder": "",
+    "editor.wordHighlightBackground": "",
+    "editor.wordHighlightBorder": "",
+    "editor.wordHighlightStrongBorder": "",
+    "editor.findMatchBackground": "",
+    "editor.findMatchBorder": "",
+    "editor.findMatchHighlightBackground": "",
+    "editor.findRangeHighlightBackground": "",
+    "editor.findMatchHighlightBorder": "",
+    "editor.hoverHighlightBackground": "",
+    "editor.lineHighlightBackground": "",
+    "editor.lineHighlightBorder": "",
+    "editorLink.activeForeground": "",
+    "editor.rangeHighlightBackground": "",
+    "editor.rangeHighlightBorder": "",
+    "editorWhitespace.foreground": "",
+    "editorIndentGuide.background": "",
+    "editorRuler.foreground": "",
+    "editorCodeLens.foreground": "",
+    "editorBracketMatch.background": "",
+    "editorBracketMatch.border": "",
+    "editorOverviewRuler.border": "",
+    "editorOverviewRuler.findMatchForeground": "",
+    "editorOverviewRuler.rangeHighlightForeground": "",
+    "editorOverviewRuler.selectionHighlightForeground": "",
+    "editorOverviewRuler.wordHighlightForeground": "",
+    "editorOverviewRuler.wordHighlightStrongForeground": "",
+    "editorOverviewRuler.modifiedForeground": "",
+    "editorOverviewRuler.addedForeground": "",
+    "editorOverviewRuler.deletedForeground": "",
+    "editorOverviewRuler.errorForeground": "",
+    "editorOverviewRuler.warningForeground": "",
+    "editorOverviewRuler.infoForeground": "",
+    "editorError.foreground": "",
+    "editorError.border": "",
+    "editorWarning.foreground": "",
+    "editorWarning.border": "",
+    "editorInfo.foreground": "",
+    "editorInfo.border": "",
+    "editorHint.foreground": "",
+    "editorHint.border": "",
+    "editorGutter.background": "",
+    "editorGutter.modifiedBackground": "",
+    "editorGutter.addedBackground": "",
+    "editorGutter.deletedBackground": "",
+
+    // Diff Editor Colors --
+    // For coloring inserted and removed text, use either a background or a border color but not both.
+    "diffEditor.insertedTextBackground": "",
+    "diffEditor.insertedTextBorder": "",
+    "diffEditor.removedTextBackground": "",
+    "diffEditor.removedTextBorder": "",
+
+    // Editor Widget Colors --
+    // The Editor widget is shown in front of the editor content. Examples are the Find/Replace dialog, the suggestion widget, and the editor hover
+    "editorWidget.background": "",
+    "editorWidget.border": "",
+    "editorSuggestWidget.background": "",
+    "editorSuggestWidget.border": "",
+    "editorSuggestWidget.foreground": "",
+    "editorSuggestWidget.highlightForeground": "",
+    "editorSuggestWidget.selectedBackground": "",
+    "editorHoverWidget.background": "",
+    "editorHoverWidget.border": "",
+    "debugExceptionWidget.background": "",
+    "debugExceptionWidget.border": "",
+    "editorMarkerNavigation.background": "",
+    "editorMarkerNavigationError.background": "",
+    "editorMarkerNavigationWarning.background": "",
+    "editorMarkerNavigationInfo.background": "",
+
+    // Peek View Colors --
+    // Peek views are used to show references and declarations as a view inside the editor.
+    "peekView.border": "",
+    "peekViewEditor.background": "",
+    "peekViewEditorGutter.background": "",
+    "peekViewEditor.matchHighlightBackground": "",
+    "peekViewResult.background": "",
+    "peekViewResult.fileForeground": "",
+    "peekViewResult.lineForeground": "",
+    "peekViewResult.matchHighlightBackground": "",
+    "peekViewResult.selectionBackground": "",
+    "peekViewResult.selectionForeground": "",
+    "peekViewTitle.background": "",
+    "peekViewTitleDescription.foreground": "",
+    "peekViewTitleLabel.foreground": "",
+
+    // Merge Conflicts --
+    // Merge conflict decorations are shown when the editor contains special diff ranges.
+    "merge.currentHeaderBackground": "",
+    "merge.currentContentBackground": "",
+    "merge.incomingHeaderBackground": "",
+    "merge.incomingContentBackground": "",
+    "merge.border": "",
+    "merge.commonContentBackground": "",
+    "merge.commonHeaderBackground": "",
+    "editorOverviewRuler.currentContentForeground": "",
+    "editorOverviewRuler.commonContentForeground": "",
+
+    // Panel Colors --
+    // Panels are shown below the editor area and contain views like Output and Integrated Terminal.
+    "panel.background": "",
+    "panel.border": "",
+    "panel.dropBackground": "",
+    "panelTitle.activeBorder": "",
+    "panelTitle.activeForeground": "",
+    "panelTitle.inactiveForeground": "",
+
+    // Status Bar Colors --
+    // The Status Bar is shown in the bottom of the workbench.
+    "statusBar.background": "",
+    "statusBar.foreground": "",
+    "statusBar.border": "",
+    "statusBar.debuggingBackground": "",
+    "statusBar.debuggingForeground": "",
+    "statusBar.debuggingBorder": "",
+    "statusBar.noFolderForeground": "",
+    "statusBar.noFolderBackground": "",
+    "statusBar.noFolderBorder": "",
+    "statusBarItem.activeBackground": "",
+    "statusBarItem.hoverBackground": "",
+    "statusBarItem.prominentBackground": "",
+    "statusBarItem.prominentHoverBackground": "",
+
+    // Title Bar Colors (macOS) -- 
+    // These only apply if you use the 'custom' Title Bar style AND you de-select Native Tabs (both under Window settings).
+    "titleBar.activeBackground": "",
+    "titleBar.activeForeground": "",
+    "titleBar.inactiveBackground": "",
+    "titleBar.inactiveForeground": "",
+    "titleBar.border": "",
+
+    // Menu Bar Colors (Windows and Linux) -- 
+    // Note: I don't use these platforms so I haven't applied defined colors yet.
+    "menubar.selectionForeground":"",
+    "menubar.selectionBackground": "",
+    "menubar.selectionBorder": "",
+    "menu.foreground":"",
+    "menu.background":"",
+    "menu.selectionForeground":"",
+    "menu.selectionBackground":"",
+    "menu.selectionBorder":"",
+    "menu.separatorBackground":"",
+
+    // Notification Colors --
+    // Notification toasts slide up from the bottom-right of the workbench.
+    "notificationCenter.border": "",
+    "notificationCenterHeader.foreground": "",
+    "notificationCenterHeader.background": "",
+    "notificationToast.border": "",
+    "notifications.foreground": "",
+    "notifications.background": "",
+    "notifications.border": "",
+    "notificationLink.foreground": "",
+
+    // Extensions
+    "extensionButton.prominentForeground": "",
+    "extensionButton.prominentBackground": "",
+    "extensionButton.prominentHoverBackground": "",
+
+    // Quick Picker
+    "pickerGroup.border": "",
+    "pickerGroup.foreground": "",
+
+    // Integrated Terminal Colors
+    "terminal.background": "",
+    "terminal.foreground": "",
+    "terminal.ansiBlack": "",
+    "terminal.ansiBlue": "",
+    "terminal.ansiBrightBlack": "",
+    "terminal.ansiBrightBlue": "",
+    "terminal.ansiBrightCyan": "",
+    "terminal.ansiBrightGreen": "",
+    "terminal.ansiBrightMagenta": "",
+    "terminal.ansiBrightRed": "",
+    "terminal.ansiBrightWhite": "",
+    "terminal.ansiBrightYellow": "",
+    "terminal.ansiCyan": "",
+    "terminal.ansiGreen": "",
+    "terminal.ansiMagenta": "",
+    "terminal.ansiRed": "",
+    "terminal.ansiWhite": "",
+    "terminal.ansiYellow": "",
+    "terminal.selectionBackground": "",
+    "terminalCursor.background": "",
+    "terminalCursor.foreground": "",
+
+    // Debug
+    "debugToolBar.background": "",
+
+    // Welcome Page
+    "welcomePage.buttonBackground": "",
+    "welcomePage.buttonHoverBackground": "",
+    "walkThrough.embeddedEditorBackground": "",
+
+    // Git Colors
+    "gitDecoration.modifiedResourceForeground": "",
+    "gitDecoration.addedResourceForeground": "",
+    "gitDecoration.conflictingResourceForeground": "",
+    "gitDecoration.deletedResourceForeground": "",
+    "gitDecoration.ignoredResourceForeground": "",
+    "gitDecoration.untrackedResourceForeground": "",
+
+    // Settings
+    "settings.headerForeground": "",
+    "settings.modifiedItemIndicator": "",
+    "settings.dropdownBackground": "",
+    "settings.dropdownForeground": "",
+    "settings.dropdownBorder": "",
+    "settings.dropdownListBorder": "",
+    "settings.checkboxBackground": "",
+    "settings.checkboxForeground": "",
+    "settings.checkboxBorder": "",
+    "settings.textInputBackground": "",
+    "settings.textInputForeground": "",
+    "settings.textInputBorder": "",
+    "settings.numberInputBackground": "",
+    "settings.numberInputForeground": "",
+    "settings.numberInputBorder": "",
+
+    // Breadcrumb
+    "breadcrumb.foreground": "",
+    "breadcrumb.background": "",
+    "breadcrumb.focusForeground": "",
+    "breadcrumb.activeSelectionForeground": "",
+    "breadcrumbPicker.background": "",
+  },
+
+  // Syntax Colors --
+  "tokenColors": [
+    // Everything in here styles syntax.
+    // For further reference see: https://code.visualstudio.com/docs/extensions/themes-snippets-colorizers#_adding-a-new-theme
+
+    // Syntax styles are based on scopes, with the most specific scope over-riding any others. The top-level syntax scopes and the scopes needed for minimum scope coverage are defined below. For further reference see: https://www.sublimetext.com/docs/3/scope_naming.html
+
+    // Each scope can have a style defined inside "settings". These available styles can be any combination of: "foreground: [color] ", "background: [color]", or "fontStyle: [bold | italic | underline]".
+
+    // Top Level & Miminal Coverage Scopes
+    {
+      "name": "Comment",
+      "scope": "comment",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Constant",
+      "scope": "constant",
+      "settings": {
+        "foreground": "",
+      }
+    }, 
+    {
+      "name": "Constant Numeric",
+      "scope": "constant.numeric",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Constant Lanugage",
+      "scope": "constant.language",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Constant Character Escape",
+      "scope": "constant.character.escape",
+      "settings": {
+        "foreground": "",
+      }
+    },
+
+    {
+      "name": "Entity",
+      "scope": "entity",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Entity Name",
+      "scope": "entity.name",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Entity Name - Section",
+      "scope": "entity.name.section",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Entity Name - Tag",
+      "scope": "entity.name.tag",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Entity Other - Inherited Class",
+      "scope": "entity.other.inherited-class",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Entity Name",
+      "scope": "entity.name",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Entity Other - Attribute Name",
+      "scope": "entity.other.attribute-name",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": "invalid",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Invalid Deprecated",
+      "scope": "invalid.deprecated",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Keyword",
+      "scope": "keyword",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Keyword Control",
+      "scope": "keyword.control",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Keyword Operator",
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Markup",
+      "scope": "markup",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Meta",
+      "scope": "meta",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "Punctuation",
+      "scope": "punctuation",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "Storage",
+      "scope": "storage",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "Storage Type",
+      "scope": "storage.modifier",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "Storage Modifier",
+      "scope": "storage.modifier",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "String",
+      "scope": "string",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "Support",
+      "scope": "suppport",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "Text",
+      "scope": "text",
+      "settings": {
+        "foreground": ""
+      }
+    },
+    {
+      "name": "Variable",
+      "scope": "variable",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Variable Language",
+      "scope": "variable",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Variable Parameter",
+      "scope": "variable.parameter",
+      "settings": {
+        "foreground": "",
+      }
+    },
+    {
+      "name": "Variable Function",
+      "scope": "variable.function",
+      "settings": {
+        "foreground": "",
+      }
+    }, 
+  ]  
+}

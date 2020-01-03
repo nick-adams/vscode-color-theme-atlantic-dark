@@ -1,0 +1,36 @@
+{
+    "name": "atlantic-dark",
+    "displayName": "Atlantic Dark Color Theme",
+    "description": "A muted dark blue-gray color theme with a simplfied option and an option for writing text and Markdown.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "publisher": "Nick Adams",
+    "author": "Nick Adams <hi@nick-adams.com>",
+    "icon": "logo-atlantic-dark.png",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "repository": "https://github.com/nick-adams/vscode-color-theme-atlantic-dark",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Atlantic Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/atlantic-dark-color-theme.json"
+            },
+            {
+              "label": "Atlantic Dark Simplified",
+              "uiTheme": "vs-dark",
+              "path": "./themes/atlantic-dark-simplified-color-theme.json"
+            },
+            {
+              "label": "Atlantic Dark Writing",
+              "uiTheme": "vs-dark",
+              "path": "./themes/atlantic-dark-writing-color-theme.json"
+            }
+        ]
+    }
+}
